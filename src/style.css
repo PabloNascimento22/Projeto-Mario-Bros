@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0 0 20px;
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Anta", sans-serif;
+}
+
+.header a:hover {
+    color: red;
+    font-size: 26px;
+    transition: 1s ease-in-out;
+}
+
+
+.logo {
+    height: 200px;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+.mario-luigi {
+    height: 500px;
+}
+
+button {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "Anta", sans-serif;
+}
+
+.button :hover {
+    background-color: green;
+    transition: ease-in-out;
+    opacity: 100%;
+
+}
+
+.button-2 :hover {
+    background-color: green;
+    transition: ease-in-out;
+    opacity: 100%;
+
+
+}
+
+body {
+    height: 100vh;
+    color: white;
+
+}
+
+.paragrafo-1 {
+    margin-bottom: 10px;
+    font-family: "Anta", sans-serif;
+}
+
+.paragrafo-2 {
+    font-family: "Anta", sans-serif;
+}
+
+
+
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.caixa-principal {
+    width: 50%;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 5);
+    background: linear-gradient(90deg, rgba(0, 0, 5, 1) 20%, rgba(3, 1, 1, 0.6643032212885154) 49%, rgba(0, 0, 0, 1) 81%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.whatsapp img {
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.formulario-fale-conosco {
+    transition: left 1s ease-in-out;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 20px;
+    top: 130px;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+
+
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: green;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: green;
+
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 5);
+    background: linear-gradient(90deg, rgba(0, 0, 5, 1) 16%, rgba(3, 1, 1, 0.6643032212885154) 47%, rgba(0, 0, 0, 1) 78%);
+    transition: visibility 1s ease-in-out
+}
+
+@media(max-width: 1100px) {
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mario-luigi {
+        width: 80vw;
+        height: auto;
+    }
+
+    .header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header img {
+        display: none;
+    }
+
+    .header a {
+        font-size: 18px;
+}
+}

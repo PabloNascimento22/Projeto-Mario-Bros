@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <Div onclick="esconderForm()" class="mascara-formulario"></Div>
+
+    <div class="header">
+        <img src="./src/img/logo-mario.png" alt="logo-mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+
+    </div>
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img class="logo" src="./src/img/logo.png" alt="logo-do-mario-bros">
+
+
+
+            <p class="paragrafo-1">Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+
+            <p class="paragrafo-2">Você ja se encontrou na situação de emergência com encanamento ? Vazamentos
+                inespeados, canos entupidos
+                ou
+                torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o seu dia!
+                Apresemtamos
+                a
+                vocês os encanadores mais famosos do reino dos Cogumelos - Mario e Luigi! </p>
+            <div class="button">
+                <button onclick="mostrarForm()" class="button">Entre em Contato</button>
+            </div>
+            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5584999385988">
+                <img src="./src/img/whatsapp.png" alt="link-para-whatsapp">
+            </a>
+        </div>
+        <div>
+            <img class="mario-luigi" src="./src/img/mario-luigi.png" alt="logo-mario-luigi">
+        </div>
+    </div>
+
+
+    <div class="caixa-video">
+        <video src="./src/video/VID-20240221-WA0065.mp4" autoplay muted loop></video>
+    </div>
+    <div class="mascara"></div>
+
+    <form class="formulario-fale-conosco" 
+        action="https://formcarry.com/s/G-VbaK_eZOp" 
+        method="POST"
+        enctype="multipart/form-data">
+           <input placeholder="Seu nome" type="text" name="nome">
+          <input placeholder="Seu telefone" type="tel" name="telefone">
+          <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+          <button class="button-2" type="submit">Pedir orçamento</button>
+    </form>
+
+</body>
+<script src="./src/scripts.js"></script>
+
+</html>
